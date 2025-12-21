@@ -51,7 +51,7 @@ def check_url():
     ).hexdigest()
 
     headers = {
-        "X-API-HASH": hashed_key,
+        "X-INTERNAL-SECRET": hashed_key,
         "X-TIMESTAMP": timestamp
     }
 
